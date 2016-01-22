@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  listing_url: MyString
+  bedroom: 1
+  sqr_ft: 1
+  water_pressure: MyString
+  notes: MyText
+  price: 1
+  realator_fee: 1
+  rank: 1
+
+two:
+  user_id: 1
+  listing_url: MyString
+  bedroom: 1
+  sqr_ft: 1
+  water_pressure: MyString
+  notes: MyText
+  price: 1
+  realator_fee: 1
+  rank: 1
