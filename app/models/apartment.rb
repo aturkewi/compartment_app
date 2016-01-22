@@ -20,6 +20,9 @@
 class Apartment < ActiveRecord::Base
     has_one :address
     belongs_to :user
-    
+
     validates_numericality_of :bedroom, :bathroom, :sqr_ft, :price, :realtor_fee, greater_than_or_equal_to: 0, allow_nil: true
+
+
+
 end
