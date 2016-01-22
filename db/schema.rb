@@ -11,18 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160122182646) do
+ActiveRecord::Schema.define(version: 20160122184708) do
 
   create_table "addresses", force: :cascade do |t|
-    t.string   "stree"
+    t.string   "street"
     t.integer  "number"
     t.string   "apartment"
     t.string   "state"
     t.string   "city"
     t.integer  "zip"
     t.integer  "floor"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "apartment_id"
   end
 
   create_table "apartments", force: :cascade do |t|
@@ -33,10 +34,11 @@ ActiveRecord::Schema.define(version: 20160122182646) do
     t.string   "water_pressure"
     t.text     "notes"
     t.integer  "price"
-    t.integer  "realator_fee"
+    t.integer  "realtor_fee"
     t.integer  "rank"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "bathroom"
   end
 
   create_table "users", force: :cascade do |t|

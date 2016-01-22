@@ -8,7 +8,7 @@ class CreateApartments < ActiveRecord::Migration
       t.string :water_pressure
       t.text :notes
       t.integer :price
-      t.integer :realator_fee
+      t.integer :realtor_fee
       t.integer :rank
 
       t.timestamps null: false
