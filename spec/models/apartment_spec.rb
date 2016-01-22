@@ -1,4 +1,4 @@
-require_relative '../test_helper'
+require_relative '../rails_helper'
 
 RSpec.describe Apartment, type: :model do
 
