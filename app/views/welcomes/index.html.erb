@@ -1,2 +1,17 @@
-<h1>Welcomes#index</h1>
-<p>Find me in app/views/welcomes/index.html.erb</p>
+<h1>Welcome</h1>
+
+<%=form_for(:session, url: login_path) do |f|%>
+    <div class="field">
+        <%= f.label :email %><br>
+        <%= f.email_field :email %><br>
+    </div>
+    <div class="field">
+        <%= f.label :password %><br>
+        <%= f.password_field :password %><br>
+    </div>
+    <hr>
+    <div class="actions">
+        <%= f.submit "Log In", class: 'btn btn-default'%>
+    </div>
+<% end %>
+<%= link_to "Signup", signup_path %>
