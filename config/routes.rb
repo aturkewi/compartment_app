@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  get 'sessions/create', as: 'login'
-  
+  post 'sessions/create', as: 'login'
+
   get 'sessions/destroy'
 
   get 'users/new', as: 'signup'
+
+  get 'users/show', as: 'user'
+
+  post 'users/create' => 'users#create'
+
   root to: 'welcomes#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
